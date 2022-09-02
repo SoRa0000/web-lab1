@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ITMO University</title>
+    <meta name="description" content="Lab 1">
+    <meta name="viewport" content="width=device-width initial-scale = 1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="navbar">
+    <nav>
+        <h1>Лабораторная работа 1</h1>
+        <div class="logo">
+            <img src="img/itmo_1.png" alt="itmo_university">
+        </div>
+    </nav>
+
+</div>
+<div class="container">
+
+    <div class="header">
+        <div class="info">
+            <p>Привет!</p>
+            <h2>Давааням <span>Баясгалан</span></h2>
+            <p id="group">Группа: P32121</p>
+            <button type="button">Перейти на GitHub</button>
+        </div>
+        <div class="image">
+            <img src="img/header.png" alt="programmer" >
+        </div>
+    </div>
+    <div class="content">
+        <h2>Вариант: 1108 </h2>
+        <div class="graph">
+            <img src="img/graph.png" alt="graph">
+        </div>
+        <div class="values">
+            <form id="input-form" action="main.php" method='POST'>
+                <div class="x_values">
+                    <label>X value:</label><br>
+                    <input type="button" value="-5" name="xVal" class="x-btn"/>
+                    <input type="button" value="-4" name="xVal"  class="x-btn"/>
+                    <input type="button" value="-3" name="xVal"  class="x-btn"/>
+                    <input type="button" value="-2" name="xVal"  class="x-btn"/>
+                    <input type="button" value="-1" name="xVal"  class="x-btn"/>
+                    <input type="button" value="0" name="xVal"  class="x-btn"/>
+                    <input type="button" value="1" name="xVal"  class="x-btn"/>
+                    <input type="button" value="2" name="xVal"  class="x-btn"/>
+                    <input type="button" value="3" name="xVal"  class="x-btn"/>
+                </div>
+                <div class="y_values">
+                    <label  for="y-value">Y value:</label><br>
+                    <input id="y-value" type="text" name="yVal" class="value_input" placeholder="{-3...5}">
+                </div>
+                <div class="r_values">
+                    <label for="r-value">R value:</label> <br>
+                    <input id="r-value" type="text" name="rVal" class="value_input" placeholder="{2...5}"><br>
+                </div>
+                <p id="error"></p>
+                <input id="submit" type="submit" class="check_button" value="Check!" />
+            </form>
+        </div>
+    </div>
+    <div class="result">
+        <h1>RESULT</h1>
+        <div class="table">
+            <table id="result-table">
+                <thead>
+                <tr>
+                    <th>id</th>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>R</th>
+                    <th>Date</th>
+                    <th>Runtime</th>
+                    <th>Result</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+<footer>
+<p>&copy2022 ITMO University</p>
+</footer>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
