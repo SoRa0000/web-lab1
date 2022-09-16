@@ -117,6 +117,9 @@ nav h1{
     font-size: 16px;
     -webkit-transition: all .1s ease-out;
 }
+.container .header .info a{
+
+}
 .container .header .info button:hover{
     background-color:#2479AA;
     color: #fff;
@@ -406,6 +409,21 @@ table tbody tr td:nth-child(6){
 }
 .false{
     color: #f84f31;
+}
+.clear-btn{
+    margin-top:5px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #6EC1F5;
+    cursor: pointer;
+    color: #fff;
+    -webkit-transition: all .1s ease;
+}
+.clear-btn:hover{
+    background-color: #5C9DF2;
+    color: #fff;
 }
 footer{
     font-size: 12px;

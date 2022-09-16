@@ -27,7 +27,7 @@
             <p>Привет!</p>
             <h2>Давааням <span>Баясгалан</span></h2>
             <p id="group">Группа: P32121</p>
-            <button type="button">Перейти на GitHub</button>
+            <a href="https://github.com/SoRa0000/web-lab1" target="_blank"><button type="button">Перейти на GitHub</button></a>
         </div>
         <div class="image">
             <img src="img/header.png" alt="programmer" >
@@ -39,7 +39,7 @@
             <img src="img/graph.png" alt="graph">
         </div>
         <div class="values">
-            <form id="input-form" action="main.php" method='POST'>
+            <form id="input-form" action="php/main.php" method='POST'>
                 <div class="x_values">
                     <label>X value:</label><br>
                     <input type="button" value="-5" name="xVal" class="x-btn"/>
@@ -71,7 +71,6 @@
             <table id="result-table">
                 <thead>
                 <tr>
-                    <th>id</th>
                     <th>X</th>
                     <th>Y</th>
                     <th>R</th>
@@ -80,12 +79,12 @@
                     <th>Result</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="table-body">
                 </tbody>
             </table>
         </div>
+        <button class="clear-btn">Clear</button>
     </div>
-
 </div>
 <footer>
 <p>&copy2022 ITMO University</p>
