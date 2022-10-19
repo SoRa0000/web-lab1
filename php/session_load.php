@@ -5,7 +5,6 @@ session_start();
 if(isset($_SESSION['datas'])){
     $id = count($_SESSION['datas']);
     foreach (array_reverse($_SESSION['datas']) as $data){
-   //     echo json_encode($data);
 
         echo "<tr>";
         echo "<td>" . $data[0] . "</td>";

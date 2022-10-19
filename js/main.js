@@ -108,8 +108,6 @@ $(function (){
     $('#input-form').submit(function(event){
         if(validateForm()){
             $('#error').empty();
-
-            // console.log($(this).closest('tbody').children('tr:first').children('td:first'));
             const formData = {
                 xVal: x_value,
                 yVal: y_value.replace(',', '.'),
